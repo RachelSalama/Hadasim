@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TwiterTowers">
+   <children>
+      <ComboBox fx:id="comboBox" layoutX="19.0" layoutY="104.0" onAction="#selectedOption" prefHeight="26.0" prefWidth="236.0" />
+      <Pane layoutX="265.0" layoutY="45.0" prefHeight="486.0" prefWidth="444.0">
+         <children>
+            <Line fx:id="rHight" endX="83.79998779296875" endY="-3.0517578125E-5" layoutX="18.0" layoutY="308.0" startX="83.80001831054688" startY="142.99996948242188" visible="false" />
+            <Line fx:id="tHight" endX="83.79998779296875" endY="-3.0517578125E-5" layoutX="17.0" layoutY="37.0" startX="83.80001831054688" startY="142.99996948242188" visible="false" />
+            <Line fx:id="width" endX="214.5999755859375" endY="142.99996948242188" layoutX="71.0" layoutY="100.0" startX="83.80001831054688" startY="142.99996948242188" visible="false" />
+            <Label fx:id="wLabel" layoutX="205.0" layoutY="219.0" text="width" visible="false" />
+            <Label fx:id="tHLabel" layoutX="47.0" layoutY="85.0" prefHeight="47.0" prefWidth="44.0" text="hight" visible="false" />
+            <Label fx:id="rHLabel" layoutX="47.0" layoutY="356.0" prefHeight="47.0" prefWidth="44.0" text="hight" visible="false" />
+            <Polyline fx:id="triangle" fill="#1d6bc4" layoutX="217.0" layoutY="220.0" points="-50.0, -40.0, 50.0, -40.0, 1.199981689453125, -192.20001220703125, -50.0, -39.99999237060547" strokeType="INSIDE" visible="false" />
+            <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#2167a9" height="152.0" layoutX="167.0" layoutY="300.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="100.0" />
+         </children>
+      </Pane>
+      <Label fx:id="towerWidth" layoutX="14.0" layoutY="327.0" prefHeight="18.0" prefWidth="187.0" text="Please insert tower's width:" visible="false" />
+      <Label fx:id="towerHight" layoutX="14.0" layoutY="428.0" prefHeight="18.0" prefWidth="187.0" text="Please insert tower's Hight:" visible="false" />
+      <TextField fx:id="widthTxt" layoutX="14.0" layoutY="364.0" visible="false" />
+      <TextField fx:id="hightTxt" layoutX="14.0" layoutY="469.0" visible="false" />
+      <Button fx:id="applySizeButton" layoutX="27.0" layoutY="518.0" mnemonicParsing="false" onAction="#getSize" prefHeight="26.0" prefWidth="112.0" text="Apply Size" visible="false" />
+      <Label fx:id="optionLabel" layoutX="19.0" layoutY="64.0" prefHeight="35.0" prefWidth="236.0" text="select an option">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
